@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Partidasreservaciones" table="partidasreservaciones" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="codRes" type="string">
+            <column name="codRes" length="45" />
+        </property>
+        <property name="codArt" type="string">
+            <column name="codArt" length="45" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="80" />
+        </property>
+        <property name="reservado" type="java.lang.Integer">
+            <column name="reservado" />
+        </property>
+        <property name="surtido" type="java.lang.Integer">
+            <column name="surtido" />
+        </property>
+        <property name="vale" type="string">
+            <column name="vale" length="10" />
+        </property>
+        <property name="costo" type="java.lang.Double">
+            <column name="costo" precision="22" scale="0" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

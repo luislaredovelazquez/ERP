@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Emisor" table="emisor">
+    <id name="idEmisor" type="java.lang.Integer">
+      <column name="idEmisor"/>
+      <generator class="identity"/>
+    </id>
+    <property name="emisor" type="string">
+      <column length="100" name="emisor"/>
+    </property>
+    <property name="rfc" type="string">
+      <column length="15" name="rfc"/>
+    </property>
+    <property name="emisorCalle" type="string">
+      <column length="100" name="emisorCalle"/>
+    </property>
+    <property name="emisorCp" type="string">
+      <column length="5" name="emisorCP"/>
+    </property>
+    <property name="emisorColonia" type="string">
+      <column length="50" name="emisorColonia"/>
+    </property>
+    <property name="emisorEstado" type="string">
+      <column length="50" name="emisorEstado"/>
+    </property>
+    <property name="emisorLocalidad" type="string">
+      <column length="50" name="emisorLocalidad"/>
+    </property>
+    <property name="emisorMunicipio" type="string">
+      <column length="50" name="emisorMunicipio"/>
+    </property>
+    <property name="emisorNoExterior" type="string">
+      <column length="3" name="emisorNoExterior"/>
+    </property>
+    <property name="emisorNoInterior" type="string">
+      <column length="3" name="emisorNoInterior"/>
+    </property>
+    <property name="emisorPais" type="string">
+      <column length="10" name="emisorPais"/>
+    </property>
+  </class>
+</hibernate-mapping>

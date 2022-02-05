@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Receptor" table="receptor">
+    <id name="idReceptor" type="java.lang.Integer">
+      <column name="idReceptor"/>
+      <generator class="identity"/>
+    </id>
+    <property name="receptor" type="string">
+      <column length="100" name="receptor"/>
+    </property>
+    <property name="receptorRfc" type="string">
+      <column length="15" name="receptorRFC"/>
+    </property>
+    <property name="receptorCalle" type="string">
+      <column length="100" name="receptorCalle"/>
+    </property>
+    <property name="receptorCp" type="string">
+      <column length="5" name="receptorCP"/>
+    </property>
+    <property name="receptorColonia" type="string">
+      <column length="50" name="receptorColonia"/>
+    </property>
+    <property name="receptorEstado" type="string">
+      <column length="50" name="receptorEstado"/>
+    </property>
+    <property name="receptorLocalidad" type="string">
+      <column length="50" name="receptorLocalidad"/>
+    </property>
+    <property name="receptorMunicipio" type="string">
+      <column length="50" name="receptorMunicipio"/>
+    </property>
+    <property name="receptorNoExterior" type="string">
+      <column length="3" name="receptorNoExterior"/>
+    </property>
+    <property name="receptorNoInterior" type="string">
+      <column length="3" name="receptorNoInterior"/>
+    </property>
+    <property name="receptorPais" type="string">
+      <column length="10" name="receptorPais"/>
+    </property>
+  </class>
+</hibernate-mapping>

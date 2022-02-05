@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/03/2012 01:31:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.helpers.Proveedores" table="proveedores">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="rfc" type="string">
+      <column length="45" name="rfc" not-null="true"/>
+    </property>
+    <property name="nombre" type="string">
+      <column length="45" name="nombre" not-null="true"/>
+    </property>
+    <property name="clasificacion" type="int">
+      <column name="clasificacion" not-null="true"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="45" name="telefono" not-null="true"/>
+    </property>
+    <property name="atencion" type="string">
+      <column length="45" name="atencion" not-null="true"/>
+    </property>
+    <property name="calle" type="string">
+      <column length="45" name="calle" not-null="true"/>
+    </property>
+    <property name="numero" type="int">
+      <column name="numero" not-null="true"/>
+    </property>
+    <property name="colonia" type="string">
+      <column length="45" name="colonia" not-null="true"/>
+    </property>
+    <property name="poblacion" type="string">
+      <column length="45" name="poblacion" not-null="true"/>
+    </property>
+    <property name="estado" type="string">
+      <column length="45" name="estado" not-null="true"/>
+    </property>
+    <property name="codigoPostal" type="int">
+      <column name="codigoPostal" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="60" name="correo" not-null="true"/>
+    </property>
+    <property name="diasCredito" type="int">
+      <column name="diasCredito" not-null="true"/>
+    </property>
+    <property name="diasLimite" type="int">
+      <column name="diasLimite" not-null="true"/>
+    </property>
+    <property name="descuento" type="int">
+      <column name="descuento" not-null="true"/>
+    </property>
+    <property name="observaciones" type="string">
+      <column length="45" name="observaciones"/>
+    </property>
+  </class>
+</hibernate-mapping>

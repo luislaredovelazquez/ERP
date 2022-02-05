@@ -1,0 +1,10 @@
+oct 09, 2014 5:29:17 PM com.paedeias.controladores.CPrincipal$Handler uncaughtException
+Información: java.lang.ClassCastException: org.jfree.chart.plot.CategoryPlot cannot be cast to org.jfree.chart.plot.PiePlot
+	at com.paedeias.vistas.panelEjemplo.createChart(panelEjemplo.java:87)
+	at com.paedeias.vistas.panelEjemplo.createDemoPanel(panelEjemplo.java:105)
+	at com.paedeias.vistas.FHome.inicializar(FHome.java:611)
+	at com.paedeias.vistas.FHome.<init>(FHome.java:49)
+	at com.paedeias.vistas.VPrincipal.<init>(VPrincipal.java:275)
+	at com.paedeias.controladores.CPrincipal.<init>(CPrincipal.java:215)
+	at com.paedeias.controladores.CPrincipal.main(CPrincipal.java:232)
+

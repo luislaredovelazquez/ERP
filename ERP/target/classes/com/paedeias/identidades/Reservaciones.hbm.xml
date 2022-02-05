@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Reservaciones" table="reservaciones" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="codigo" type="java.lang.Long">
+            <column name="codigo" />
+        </property>
+        <property name="facturada" type="java.lang.Integer">
+            <column name="facturada" />
+        </property>
+        <property name="fecha" type="timestamp">
+            <column name="fecha" length="19" />
+        </property>
+        <property name="codcliente" type="string">
+            <column name="codcliente" length="45" />
+        </property>
+        <property name="codventa" type="java.lang.Long">
+            <column name="codventa" />
+        </property>
+        <property name="nomCli" type="string">
+            <column name="nomCli" length="45" />
+        </property>
+        <property name="siniestro" type="string">
+            <column name="siniestro" length="30" />
+        </property>
+        <property name="taller" type="string">
+            <column name="taller" length="45" />
+        </property>
+        <property name="marca" type="string">
+            <column name="marca" length="45" />
+        </property>
+        <property name="serie" type="string">
+            <column name="serie" length="45" />
+        </property>
+        <property name="tipoAuto" type="string">
+            <column name="tipoAuto" length="45" />
+        </property>
+        <property name="placas" type="string">
+            <column name="placas" length="45" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="5" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="45" />
+        </property>
+        <property name="poliza" type="string">
+            <column name="poliza" length="20" />
+        </property>
+        <property name="puertas" type="java.lang.Integer">
+            <column name="puertas" />
+        </property>
+        <property name="asegurado" type="string">
+            <column name="asegurado" length="45" />
+        </property>
+        <property name="solicito" type="string">
+            <column name="solicito" length="45" />
+        </property>
+        <property name="devolucion" type="java.lang.Integer">
+            <column name="devolucion" />
+        </property>
+        <property name="cancelada" type="java.lang.Integer">
+            <column name="cancelada" />
+        </property>
+        <property name="fechaDevol" type="timestamp">
+            <column name="fechaDevol" length="19" />
+        </property>
+        <property name="obsCancel" type="timestamp">
+            <column name="obsCancel" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

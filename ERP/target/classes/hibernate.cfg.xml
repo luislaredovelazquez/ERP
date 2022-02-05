@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/llv</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">cheshire</property>
+    <mapping resource="com/paedeias/identidades/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Articulolinea.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/helpers/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Ubicacion.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articuloproveedor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Ubicacion.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Departamento.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Receptor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Factura.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Proveedores.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Emisor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articuloubicacion.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articulos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Kardex.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Articuloproveedor.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Ubicacion.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Concepto.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Linea.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Usuarios.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Clientes.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Departamento.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Ventas.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Partidas.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Anticipos.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Partidasanticipos.hbm.xml"/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Compras.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Partidasventareservacion.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Partidasventasanticipos.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Cuentasporpagar.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Reservaciones.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Partidasctasporcobrar.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Partidasctasporpagar.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Pedidos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Partidascompras.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Cuentasporcobrar.hbm.xml"/>
+    <mapping/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Partidasreservaciones.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Ventaanticipos.hbm.xml"/>
+    <mapping resource="com/paedeias/identidades/Pedidosventas.hbm.xml"/>
+    <mapping/>
+    <mapping resource="com/paedeias/identidades/Ventareservacion.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

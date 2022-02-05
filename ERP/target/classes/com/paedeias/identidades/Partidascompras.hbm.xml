@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Partidascompras" table="partidascompras" catalog="llv">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="compra" type="java.lang.Long">
+            <column name="compra" />
+        </property>
+        <property name="articulo" type="string">
+            <column name="articulo" length="45" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="precioUni" type="java.lang.Double">
+            <column name="precioUni" precision="22" scale="0" />
+        </property>
+        <property name="descuento" type="java.lang.Double">
+            <column name="descuento" precision="22" scale="0" />
+        </property>
+        <property name="descuentoArti" type="java.lang.Double">
+            <column name="descuentoArti" precision="22" scale="0" />
+        </property>
+        <property name="costoDesc" type="java.lang.Double">
+            <column name="costoDesc" precision="22" scale="0" />
+        </property>
+        <property name="subtotal" type="java.lang.Double">
+            <column name="subtotal" precision="22" scale="0" />
+        </property>
+        <property name="montoIva" type="java.lang.Double">
+            <column name="montoIva" precision="22" scale="0" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="total" precision="22" scale="0" />
+        </property>
+        <property name="iva" type="java.lang.Integer">
+            <column name="iva" />
+        </property>
+        <property name="porcCargo" type="java.lang.Integer">
+            <column name="porcCargo" />
+        </property>
+        <property name="cargoArticulo" type="java.lang.Double">
+            <column name="cargoArticulo" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

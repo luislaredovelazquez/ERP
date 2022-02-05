@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!-- Checar lo del descuendo adicional-->
+
+<pedido>
+
+<codigoProveedor>200</codigoProveedor>
+<observacion>SIN NINGUNA OBSERVACIÓN</observacion>
+
+<partidas>
+<partida>
+<descuento>70</descuento>
+<descuentoArti>930.9999999999999</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>399.0000000000001</costoDesc>
+<precioUni>1330</precioUni>
+<iva>16</iva>
+<articulo>041I</articulo>
+<cantidad>2</cantidad>
+<subtotal>798.0000000000002</subtotal>
+<montoIva>127.68000000000004</montoIva>
+<total>925.6800000000003</total>
+<precioCompra>1330</precioCompra>
+<utilidad>0</utilidad>
+<stockMin>0</stockMin>
+<stockMax>0</stockMax>
+<precioVenta>601.69</precioVenta>
+<descripcion>ESPEJO DAKOTA 05-07 IZQ ELEC(NO ABAT)</descripcion>
+</partida>
+</partidas>
+		
+</pedido>

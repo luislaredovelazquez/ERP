@@ -1,0 +1,2 @@
+Las cantidades en el código C11N no coinciden
+Las cantidades en el código C16N no coinciden

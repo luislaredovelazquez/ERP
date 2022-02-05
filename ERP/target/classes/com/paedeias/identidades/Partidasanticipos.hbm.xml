@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-may-2012 12:53:36 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Partidasanticipos" table="partidasanticipos" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="anticipo" type="java.lang.Long">
+            <column name="anticipo" />
+        </property>
+        <property name="codigoarticulo" type="string">
+            <column name="codigoarticulo" length="45" />
+        </property>
+        <property name="idarticulo" type="java.lang.Long">
+            <column name="idarticulo" />
+        </property>
+        <property name="articulo" type="string">
+            <column name="articulo" length="90" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="precioCompra" type="java.lang.Double">
+            <column name="precioCompra" precision="22" scale="0" />
+        </property>
+        <property name="precioVenta" type="java.lang.Double">
+            <column name="precioVenta" precision="22" scale="0" />
+        </property>
+        <property name="surtido" type="java.lang.Integer">
+            <column name="surtido" />
+        </property>
+    </class>
+</hibernate-mapping>

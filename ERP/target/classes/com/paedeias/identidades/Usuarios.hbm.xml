@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Usuarios" table="usuarios">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nombres" type="string">
+      <column length="45" name="nombres" not-null="true"/>
+    </property>
+    <property name="apellidoP" type="string">
+      <column length="45" name="apellidoP" not-null="true"/>
+    </property>
+    <property name="apellidoM" type="string">
+      <column length="45" name="apellidoM" not-null="true"/>
+    </property>
+    <property name="contrasena" type="string">
+      <column length="45" name="contrasena" not-null="true"/>
+    </property>
+    <property name="puesto" type="string">
+      <column length="45" name="puesto" not-null="true"/>
+    </property>
+    <property name="correo" type="string">
+      <column length="45" name="correo"/>
+    </property>
+    <property name="foto" type="string">
+      <column length="45" name="foto" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<pedido>
+<codigoProveedor>200</codigoProveedor>
+<cdescAdi>20.0</cdescAdi>
+<cdescAdiPor>0</cdescAdiPor>
+<cargoAdi>0.0</cargoAdi>
+<descuentoVenta>true</descuentoVenta>
+<desadi>20.0</desadi>
+<tsubtotal>205.3</tsubtotal>
+<tiva>32.848</tiva>
+<ttotal>238.14800000000002</ttotal>
+<observacion/>
+<partidas>
+<partida>
+<descuento>0.0</descuento>
+<descuentoArti>0.0</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0.0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>134.4</costoDesc>
+<precioUni>134.4</precioUni>
+<iva>16</iva>
+<articulo>ANT0069I</articulo>
+<cantidad>1</cantidad>
+<subtotal>134.4</subtotal>
+<montoIva>21.504</montoIva>
+<total>155.904</total>
+<precioCompra>134.4</precioCompra>
+<utilidad>0.0</utilidad>
+<stockMin>0</stockMin>
+<stockMax>0</stockMax>
+<precioVenta>202.68</precioVenta>
+<descripcion>BASE FARO NIEBLA LOBO 07/08 *MAY59527 A=20910</descripcion>
+</partida>
+<partida>
+<descuento>0.0</descuento>
+<descuentoArti>0.0</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0.0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>90.9</costoDesc>
+<precioUni>90.9</precioUni>
+<iva>16</iva>
+<articulo>2600611W00I</articulo>
+<cantidad>1</cantidad>
+<subtotal>90.9</subtotal>
+<montoIva>14.544</montoIva>
+<total>105.444</total>
+<precioCompra>90.9</precioCompra>
+<utilidad>0.0</utilidad>
+<stockMin>1</stockMin>
+<stockMax>8</stockMax>
+<precioVenta>137.08</precioVenta>
+<descripcion>CARCAZA 720 FARO/CUAD.DER-IZQ.</descripcion>
+</partida>
+</partidas>
+<sha1>55979816ad49e8a834d020a3d4d3313bc8e714d1</sha1>
+</pedido>

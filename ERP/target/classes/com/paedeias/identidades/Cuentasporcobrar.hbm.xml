@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Cuentasporcobrar" table="cuentasporcobrar" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="venta" type="string">
+            <column name="venta" length="45" />
+        </property>
+        <property name="fechaVencimiento" type="timestamp">
+            <column name="fechaVencimiento" length="19" />
+        </property>
+        <property name="pagado" type="java.lang.Integer">
+            <column name="pagado" />
+        </property>
+        <property name="observacion" type="string">
+            <column name="observacion" length="45" />
+        </property>
+        <property name="saldo" type="java.lang.Double">
+            <column name="saldo" precision="22" scale="0" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="3" />
+        </property>
+    </class>
+</hibernate-mapping>

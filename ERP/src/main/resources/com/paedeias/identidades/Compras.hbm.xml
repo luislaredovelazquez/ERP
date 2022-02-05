@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Compras" table="compras" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="codigoPedido" type="java.lang.Long">
+            <column name="codigoPedido" />
+        </property>
+        <property name="codigoProveedor" type="java.lang.Long">
+            <column name="codigoProveedor" />
+        </property>
+        <property name="importe" type="java.lang.Double">
+            <column name="importe" precision="22" scale="0" />
+        </property>
+        <property name="cargos" type="java.lang.Integer">
+            <column name="cargos" />
+        </property>
+        <property name="descAdic" type="string">
+            <column name="descAdic" length="10" />
+        </property>
+        <property name="compra" type="java.lang.Integer">
+            <column name="compra" />
+        </property>
+        <property name="devolucion" type="java.lang.Integer">
+            <column name="devolucion" />
+        </property>
+        <property name="pedido" type="java.lang.Integer">
+            <column name="pedido" />
+        </property>
+        <property name="numRefComp" type="string">
+            <column name="numRefComp" length="45" />
+        </property>
+        <property name="observacion" type="string">
+            <column name="observacion" length="65535" />
+        </property>
+        <property name="tipoPago" type="string">
+            <column name="tipoPago" length="5" />
+        </property>
+        <property name="cheque" type="string">
+            <column name="cheque" length="10" />
+        </property>
+        <property name="banco" type="string">
+            <column name="banco" length="45" />
+        </property>
+        <property name="diasCred" type="java.lang.Integer">
+            <column name="diasCred" />
+        </property>
+        <property name="fechaCompra" type="timestamp">
+            <column name="fechaCompra" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

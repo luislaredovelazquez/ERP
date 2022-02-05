@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Concepto" table="concepto">
+    <id name="idConcepto" type="java.lang.Integer">
+      <column name="idConcepto"/>
+      <generator class="identity"/>
+    </id>
+    <property name="noFactura" type="java.lang.Integer">
+      <column name="noFactura"/>
+    </property>
+    <property name="codigo" type="string">
+      <column length="15" name="codigo"/>
+    </property>
+    <property name="importe" type="string">
+      <column length="8" name="importe"/>
+    </property>
+    <property name="valorUnitario" type="string">
+      <column length="8" name="valorUnitario"/>
+    </property>
+    <property name="descripcion" type="string">
+      <column length="350" name="descripcion"/>
+    </property>
+    <property name="noIdentificacion" type="string">
+      <column length="10" name="noIdentificacion"/>
+    </property>
+    <property name="unidad" type="string">
+      <column length="6" name="unidad"/>
+    </property>
+    <property name="cantidad" type="string">
+      <column length="6" name="cantidad"/>
+    </property>
+  </class>
+</hibernate-mapping>

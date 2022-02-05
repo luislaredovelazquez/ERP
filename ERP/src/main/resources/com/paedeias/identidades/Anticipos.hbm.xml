@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-may-2012 13:03:01 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Anticipos" table="anticipos" catalog="llv">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="referencia" type="string">
+            <column name="referencia" length="45" />
+        </property>
+        <property name="fecha" type="string">
+            <column name="fecha" length="45" />
+        </property>
+        <property name="idVendedor" type="string">
+            <column name="idVendedor" length="45" />
+        </property>
+        <property name="fechaFin" type="string">
+            <column name="fechaFin" length="45" />
+        </property>
+        <property name="acuenta" type="string">
+            <column name="aCuenta" length="45" />
+        </property>
+        <property name="importe" type="string">
+            <column name="importe" length="45" />
+        </property>
+        <property name="resta" type="string">
+            <column name="resta" length="45" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="observaciones" length="65535" />
+        </property>
+        <property name="devuelta" type="java.lang.Integer">
+            <column name="devuelta" />
+        </property>
+        <property name="cancelado" type="java.lang.Integer">
+            <column name="cancelado" />
+        </property>
+        <property name="ticket" type="java.lang.Integer">
+            <column name="ticket" />
+        </property>
+        <property name="factura" type="java.lang.Integer">
+            <column name="factura" />
+        </property>
+        <property name="surtido" type="java.lang.Integer">
+            <column name="surtido" />
+        </property>
+    </class>
+</hibernate-mapping>

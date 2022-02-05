@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-abr-2012 18:15:53 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Partidas" table="partidas" catalog="llv">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="idVenta" type="java.lang.Long">
+            <column name="idVenta" />
+        </property>
+        <property name="idArticulo" type="java.lang.Long">
+            <column name="idArticulo" />
+        </property>
+        <property name="descripcionArticulo" type="string">
+            <column name="descripcionArticulo" length="65535" />
+        </property>
+        <property name="precioVenta" type="java.lang.Double">
+            <column name="precioVenta" precision="22" scale="0" />
+        </property>
+        <property name="tipoBeneficio" type="string">
+            <column name="tipoBeneficio" length="65535" />
+        </property>
+        <property name="beneficio" type="java.lang.Double">
+            <column name="beneficio" precision="22" scale="0" />
+        </property>
+        <property name="conBeneficio" type="java.lang.Double">
+            <column name="conBeneficio" precision="22" scale="0" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="subtotal" type="java.lang.Double">
+            <column name="subtotal" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

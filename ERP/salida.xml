@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><Cancelacion xmlns="http://cancelacfd.sat.gob.mx" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Fecha="2013-03-04T17:44:30.532-0600" RfcEmisor="CME000515HX7"><Folios><UUID>DC1C391D-8A77-4C71-C5D1-34A780BBF986</UUID></Folios><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>zVubOMa+hlcpQF1RS/8EkiM8CU0=</DigestValue></Reference></SignedInfo><SignatureValue>OPHk6sOTqjJ27doDnvPdkTwEMb/ebWGmjJNoPpdeAX34wlrXa3UZh4DSuTSQQ5am0KDYoXZqv4Fx
+9RbHAl4JRDLUSPxf7nqfJajkFiLlyA1D9fK+bC7d+R/KDCMFsXB4Mxi1szwbNH2dNZ1mmSH/xi1i
+vJViugZAxwqzFTwgf2M=</SignatureValue><KeyInfo><X509Data><X509IssuerSerial><X509IssuerName>OID.1.2.840.113549.1.9.2=Responsable: Cecilia Guillermina García Guerra, OID.2.5.4.45=SAT970701NN3, L=Cuauhtémoc, ST=Distrito Federal, C=MX, OID.2.5.4.17=06300, STREET="Av. Hidalgo 77, Col. Guerrero", EMAILADDRESS=asisnet@sat.gob.mx, OU=Administración de Seguridad de la Información, O=Servicio de Administración Tributaria, CN=A.C. del Servicio de Administración Tributaria</X509IssuerName><X509SerialNumber>275106190557734483187066766774039375436527778097</X509SerialNumber></X509IssuerSerial><X509Certificate>MIIEjDCCA3SgAwIBAgIUMDAwMDEwMDAwMDAyMDI3MDA1OTEwDQYJKoZIhvcNAQEFBQAwggGVMTgw
+NgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEv
+MC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsM
+L0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSEwHwYJKoZI
+hvcNAQkBFhJhc2lzbmV0QHNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wu
+IEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRv
+IEZlZGVyYWwxFDASBgNVBAcMC0N1YXVodMOpbW9jMRUwEwYDVQQtEwxTQVQ5NzA3MDFOTjMxPjA8
+BgkqhkiG9w0BCQIML1Jlc3BvbnNhYmxlOiBDZWNpbGlhIEd1aWxsZXJtaW5hIEdhcmPDrWEgR3Vl
+cnJhMB4XDTEyMTIyODAwMDMzNVoXDTE2MTIyODAwMDMzNVowgc0xJTAjBgNVBAMTHENPTElTSU9O
+IFkgTUVDQU5JQ0EgU0EgREUgQ1YxJTAjBgNVBCkTHENPTElTSU9OIFkgTUVDQU5JQ0EgU0EgREUg
+Q1YxJTAjBgNVBAoTHENPTElTSU9OIFkgTUVDQU5JQ0EgU0EgREUgQ1YxJTAjBgNVBC0THENNRTAw
+MDUxNUhYNyAvIENBSFI2MzA4MTVKSDUxHjAcBgNVBAUTFSAvIENBSFI2MzA4MTVNREZTUlMwNTEP
+MA0GA1UECxMGTUFUUklaMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjAakrxOYgjbx4zgUO
+MsdVDO3FmcZ4qtR3++/whaylQM2VlFcZ/DOR8SJKGMSiZ/ep8WPQ9qM6LBGuXeSohfLMC/YSZbdJ
+JWKX6qOKVwHu/eMfe4QzbcZ6IGP2Ps7WDUvn/2jaTTAzO8Eio6Izx434zOFJPzDEyxiYoG+qA3h2
+FQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEA
+Mpurel2dVD4lxrEa6GMrLybdZh+Oc/aKtqlcMXJke51zVmaCmroAxPc+rqIfxtO2Akcy2hxNC2BA
+6mrn5MGqepWlf9blvzl5jmaJ2juZ4vmd4VTpSq2wq2+zMc9InwlozHmLOSwRpDEGsjS+RqHbU1wC
+6u5iFF9q3I/fF5+BeddNX9syKVT4JZbJFbKVBgqlZ8sJDrIe0YYIMvbHGRGClMFW90vJNs8UTUSj
+5e4nf90jh0LWt4/PhUTmra2zIHPyHDtHJRHdWxlFrCiqFr+ZgZgKFRa0BIccqFdb1qFQIogVP4sS
+UU1/F7UcsBHSbRAwv8gHgsnL6k9NnsM1Dw3Qzg==</X509Certificate></X509Data></KeyInfo></Signature></Cancelacion>

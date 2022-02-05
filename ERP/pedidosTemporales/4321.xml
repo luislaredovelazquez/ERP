@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<pedido>
+<codigoProveedor>200</codigoProveedor>
+<partidas>
+<partida>
+<descuento>0.0</descuento>
+<descuentoArti>0.0</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0.0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>434.0</costoDesc>
+<precioUni>434.0</precioUni>
+<iva>16</iva>
+<articulo>039I</articulo>
+<cantidad>1</cantidad>
+<subtotal>434.0</subtotal>
+<montoIva>69.44</montoIva>
+<total>503.44</total>
+<precioCompra>434.0</precioCompra>
+<utilidad>0.0</utilidad>
+<stockMin>1</stockMin>
+<stockMax>2</stockMax>
+<precioVenta>654.47</precioVenta>
+<descripcion>CALAVERA VOYAGER 04-07 IZQ P/2 FOCOS</descripcion>
+</partida>
+<partida>
+<descuento>0.0</descuento>
+<descuentoArti>0.0</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0.0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>30.8</costoDesc>
+<precioUni>30.8</precioUni>
+<iva>16</iva>
+<articulo>022RI</articulo>
+<cantidad>1</cantidad>
+<subtotal>30.8</subtotal>
+<montoIva>4.928</montoIva>
+<total>35.728</total>
+<precioCompra>30.8</precioCompra>
+<utilidad>0.0</utilidad>
+<stockMin>0</stockMin>
+<stockMax>0</stockMax>
+<precioVenta>46.45</precioVenta>
+<descripcion>CUARTO SALPICADERA CLIO 02-10 DER/IZQ*MY59500</descripcion>
+</partida>
+</partidas>
+<observacion>OBSERVACIONES AQUI</observacion>
+</pedido>

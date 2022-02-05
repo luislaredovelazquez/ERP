@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-abr-2012 18:15:53 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Ventas" table="ventas" catalog="llv">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idusuario" type="java.lang.Long">
+            <column name="idusuario" />
+        </property>
+        <property name="idcliente" type="java.lang.Long">
+            <column name="idcliente" />
+        </property>
+        <property name="idadministrador" type="java.lang.Long">
+            <column name="idadministrador" />
+        </property>
+        <property name="articulos" type="java.lang.Integer">
+            <column name="articulos" />
+        </property>
+        <property name="partidas" type="java.lang.Integer">
+            <column name="partidas" />
+        </property>
+        <property name="subtotal" type="java.lang.Double">
+            <column name="subtotal" precision="22" scale="0" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="total" precision="22" scale="0" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="observaciones" length="65535" />
+        </property>
+        <property name="tipoDeVenta" type="string">
+            <column name="tipoDeVenta" length="45" />
+        </property>
+        <property name="fechaVenta" type="date">
+            <column name="fechaVenta" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

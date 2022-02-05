@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<factura>
+<general>
+<emisorRFC>CME000515HX7</emisorRFC>
+<emisorNombre>PRUEBA</emisorNombre>
+<emisorCalle>SALVADOR DIAZ MIRON</emisorCalle>
+<emisorNumero>306</emisorNumero>
+<emisorColonia>SANCHEZ COLIN</emisorColonia>
+<emisorCP>50150</emisorCP>
+<emisorCiudad>TOLUCA</emisorCiudad>
+<emisorEstado>ESTADO DE MÉXICO</emisorEstado>
+<emisorPais>MÉXICO</emisorPais>
+<expedidoCalle>SALVADOR DIAZ MIRON</expedidoCalle>
+<expedidoNumero>306</expedidoNumero>
+<expedidoColonia>SANCHEZ COLIN</expedidoColonia>
+<expedidoCP>SANCHEZ COLIN</expedidoCP>
+<expedidoCiudad>TOLUCA</expedidoCiudad>
+<expedidoEstado>ESTADO DE MÉXICO</expedidoEstado>
+<expedidoPais>MÉXICO</expedidoPais>
+<clienteNombre>AGRALTEC S.C. DE R.L. DE C.V.</clienteNombre>
+<clienteRFC>AGR091204517</clienteRFC>
+<clienteCalle>CAMINO A LA LOMA</clienteCalle>
+<clienteNumeroExterior>-</clienteNumeroExterior>
+<clienteNumeroInterior>-</clienteNumeroInterior>
+<clientePais>MÉXICO</clientePais>
+<clienteColonia>SANTA MARIA RAYÓN</clienteColonia>
+<clientePoblacion>RAYÓN</clientePoblacion>
+<clienteCodigoPostal>52360</clienteCodigoPostal>
+<clienteEstado>ESTADO DE MÉXICO</clienteEstado>
+<banco>SANTANDER</banco>
+<numeroCuenta>5761</numeroCuenta>
+<fechaEmision>2014-09-17T11:05:34</fechaEmision>
+<folio>5</folio>
+<numeroCertificadoSAT>00001000000301205071</numeroCertificadoSAT>
+<numeroCertificado>00001000000300623227</numeroCertificado>
+<metodoPago>TRANSFERENCIA</metodoPago>
+<tipoComprobante>ingreso</tipoComprobante>
+<folioInterno>C5</folioInterno>
+<regimenFiscal>Régimen General de Ley</regimenFiscal>
+<facturaMensaje>ESTE DOCUMENTO ES UNA IMPRESIÓN DE UN COMPROBANTE FISCAL DIGITAL</facturaMensaje>
+<facturaMensaje2>Pago hecho en una sola exhibición</facturaMensaje2>
+<cadenaOriginal>||3.2|2014-09-17T11:03:51|ingreso|PAGO EN UNA SOLA EXHIBICION|13793.10|0.00|MXN|16000.00|TRANSFERENCIA|TOLUCA|5761|LAVL8707071G0|LUIS DE JESUS LAREDO VELAZQUEZ|PRIMERA CERRADA CEBORUCO|11|0|AZTECA|TOLUCA|TOLUCA|ESTADO DE MÉXICO|MÉXICO|50180|PRIMERA CERRADA CEBORUCO|11|AZTECA|TOLUCA|TOLUCA|ESTADO DE MÉXICO|MÉXICO|50180|RÉGIMEN DE INCORPORACIÓN FISCAL|AGR091204517|AGRALTEC S.C. DE R.L. DE C.V.|CAMINO A LA LOMA|-|SANTA MARIA RAYÓN|ESTADO DE MÉXICO|MÉXICO|52360|1|PZA|SE05|DESARROLLO DE PÁGINA WEB|13793.10|13793.10|IVA|16.00|2206.90|2206.90||</cadenaOriginal>
+<timbreFiscal>6668D68B-CC38-4537-D48A-1EAF14393CAB</timbreFiscal>
+<cantidadLetra>DIECISEIS MIL  PESOS 00/100 M.N.</cantidadLetra>
+<selloDigital>hlxlLwnnPh8QmX2c8oaTisOU8eUwy8KwSo717YtmAHZW2697QgTMg0oqsdMQfxF3pKGtWmF4cHw9b9Wk0dWW4UlW2HsrCRmXHLF9Z6DtxCA5zSQDHcwisxib/PxWgBLpK6+qB7PaVk3+3mUC8LQkqTDuM31A34ApzIJvYJlKxro=</selloDigital>
+<selloSAT>m9IM/XwZH5q9wTgdJXVgvUIKoX8DDJ6zz7liqKBf72L63HmyxkhEPgeCTBRaFX4bgDCbGyxf6e/Jx3i+q0oT6OHx1bdsVECaw/RDha7f+DxyaWA3cJRTTn5tpolF59zessUB6yxtOTkNRryO++qfsGTtE2lO4V+F41q/t48v1tU=</selloSAT>
+<motivo>Venta 5</motivo>
+<subtotal>13793.10</subtotal>
+<descuento>0.00</descuento>
+<iva>2206.90</iva>
+<total>16000.00</total>
+</general>
+<partidas>
+<folio>5</folio>
+<codigo>SE05</codigo>
+<cantidad>1</cantidad>
+<descripcion>DESARROLLO DE PÁGINA WEB</descripcion>
+<unidad>PZA</unidad>
+<precioUnitario>13793.10</precioUnitario>
+<importe>13793.10</importe>
+</partidas>
+</factura>

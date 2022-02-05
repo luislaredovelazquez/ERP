@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<pedido>
+<tipo>3</tipo>
+<criterio>Paretto</criterio>
+<elecciones>@93440832O@377807240O@377857044U71O@377857561O@93438865O@93396134O@1JM953041O@E008O@</elecciones>
+<sha1>3fd17595317dd20304faacd734aa0fd95cb2ceb5</sha1>
+</pedido>

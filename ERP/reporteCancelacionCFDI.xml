@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<cancelacion>
+<cancelar>1</cancelar>
+<fecha>2014_10_14T11_27_28</fecha>
+<rfc>LAVL8707071G0</rfc>
+<selloSAT>+hEgfDWJtIgYRlJROiE1E/a2JdARvON9TPuM9hZsPn38q2Iu09AtmUj/GBqSQYQ8SRNPR6BZ05RdFSxctGrYKw==</selloSAT>
+<partidas>
+<partida>
+<cancelar>1</cancelar>
+<uuid>9B46E9C5-6D95-4F9A-8599-A4AE0AC8F2DD</uuid>
+<status>Cancelado</status>
+</partida>
+<partida>
+<cancelar>1</cancelar>
+<uuid>9B46E9C5-6D95-4F9A-8599-A4AE0AC8F2DD</uuid>
+<status>Cancelado</status>
+</partida>
+</partidas>
+</cancelacion>

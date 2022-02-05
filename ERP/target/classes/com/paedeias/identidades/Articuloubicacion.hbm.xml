@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26/03/2012 03:02:48 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Articuloubicacion" table="articuloubicacion">
+    <id name="id" type="java.lang.Long">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idarticulo" type="long">
+      <column name="idarticulo" not-null="true"/>
+    </property>
+    <property name="idubicacion" type="long">
+      <column name="idubicacion" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

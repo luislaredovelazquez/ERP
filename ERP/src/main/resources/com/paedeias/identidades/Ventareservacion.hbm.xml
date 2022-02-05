@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Ventareservacion" table="ventareservacion" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="facturada" type="java.lang.Integer">
+            <column name="facturada" />
+        </property>
+        <property name="vendedor" type="java.lang.Long">
+            <column name="vendedor" />
+        </property>
+        <property name="cliente" type="java.lang.Long">
+            <column name="cliente" />
+        </property>
+        <property name="importe" type="java.lang.Double">
+            <column name="importe" precision="22" scale="0" />
+        </property>
+        <property name="iva" type="java.lang.Double">
+            <column name="iva" precision="22" scale="0" />
+        </property>
+        <property name="devolucion" type="java.lang.Integer">
+            <column name="devolucion" />
+        </property>
+        <property name="tipoPago" type="string">
+            <column name="tipoPago" length="5" />
+        </property>
+        <property name="diasCredito" type="java.lang.Integer">
+            <column name="diasCredito" />
+        </property>
+        <property name="fechaVenta" type="timestamp">
+            <column name="fechaVenta" length="19" />
+        </property>
+        <property name="fechaCobrar" type="timestamp">
+            <column name="fechaCobrar" length="19" />
+        </property>
+        <property name="fechaDevolucion" type="timestamp">
+            <column name="fechaDevolucion" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<pedido>
+<codigoProveedor>200</codigoProveedor>
+<observacion/>
+<sha1>&#8482;&#8364;&#11;&#8230;Ó8&gt;:/´^·Ð&#6;jHy©ÚÐ</sha1>
+<partidas>
+<partida>
+<descuento>0.0</descuento>
+<descuentoArti>0.0</descuentoArti>
+<porcCargo>0</porcCargo>
+<cargoArticulo>0.0</cargoArticulo>
+<cascada>0</cascada>
+<cadenaCascada>SIN CASCADA</cadenaCascada>
+<costoDesc>1.5</costoDesc>
+<precioUni>1.5</precioUni>
+<iva>16</iva>
+<articulo>1141I</articulo>
+<cantidad>1</cantidad>
+<subtotal>1.5</subtotal>
+<montoIva>0.24</montoIva>
+<total>1.74</total>
+<precioCompra>1.5</precioCompra>
+<utilidad>0.0</utilidad>
+<stockMin>10</stockMin>
+<stockMax>100</stockMax>
+<precioVenta>2.26</precioVenta>
+<descripcion>FOCO 1 POLO BLANCO CAL/CTO </descripcion>
+</partida>
+</partidas>
+</pedido>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Pedidos" table="pedidos" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idArticulo" type="java.lang.Long">
+            <column name="idArticulo" />
+        </property>
+        <property name="codigoArticulo" type="string">
+            <column name="codigoArticulo" length="45" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="65535" />
+        </property>
+        <property name="costo" type="java.lang.Double">
+            <column name="costo" precision="22" scale="0" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="fechaIni" type="timestamp">
+            <column name="fechaIni" length="19" />
+        </property>
+        <property name="fechaFin" type="timestamp">
+            <column name="fechaFin" length="19" />
+        </property>
+        <property name="proveedor" type="java.lang.Long">
+            <column name="proveedor" />
+        </property>
+        <property name="surtido" type="java.lang.Integer">
+            <column name="surtido" />
+        </property>
+        <property name="de" type="string">
+            <column name="De" length="5" />
+        </property>
+        <property name="referencia" type="java.lang.Long">
+            <column name="referencia" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

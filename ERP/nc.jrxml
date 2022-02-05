@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true">
+	<property name="ireport.zoom" value="1.9965000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="385"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="id_factura" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logoFerrari" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorNombre" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorRfc" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorCalle" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorNumero" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorColonia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorCP" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorCiudad" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorPais" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoCalle" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoNumero" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoColonia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoCP" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoCiudad" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoEstado" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="expedidoPais" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="facturaMensaje1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="facturaMensaje2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="emisorEstado" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="banco" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="transferencia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT f.*,c.id,c.nombre,c.calle,c.numeroExterior,
+c.numeroInterior,c.colonia,c.poblacion,c.estado,c.codigoPostal,c.rfc,
+c.pais
+FROM factura f,clientes c WHERE idFactura = $P{id_factura} AND idReceptorF = id;]]>
+	</queryString>
+	<field name="idFactura" class="java.math.BigInteger"/>
+	<field name="version" class="java.lang.String"/>
+	<field name="serie" class="java.lang.String"/>
+	<field name="folio" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="noAprobacion" class="java.lang.String"/>
+	<field name="anoAprobacion" class="java.lang.String"/>
+	<field name="formaDePago" class="java.lang.String"/>
+	<field name="subtotal" class="java.lang.String"/>
+	<field name="descuento" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="totalLetra" class="java.lang.String"/>
+	<field name="tipoDeComprobante" class="java.lang.String"/>
+	<field name="noCertificado" class="java.lang.String"/>
+	<field name="certificado" class="java.lang.String"/>
+	<field name="sello" class="java.lang.String"/>
+	<field name="idEmisorF" class="java.lang.Integer"/>
+	<field name="idReceptorF" class="java.lang.Integer"/>
+	<field name="idConceptoFactura" class="java.lang.String"/>
+	<field name="impuesto" class="java.lang.String"/>
+	<field name="tasa" class="java.lang.String"/>
+	<field name="importeImp" class="java.lang.String"/>
+	<field name="folioInterno" class="java.lang.String"/>
+	<field name="regimen" class="java.lang.String"/>
+	<field name="cadenaCompleta" class="java.lang.String"/>
+	<field name="motivo" class="java.lang.String"/>
+	<field name="id" class="java.math.BigInteger"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="calle" class="java.lang.String"/>
+	<field name="numeroExterior" class="java.lang.String"/>
+	<field name="numeroInterior" class="java.lang.String"/>
+	<field name="colonia" class="java.lang.String"/>
+	<field name="poblacion" class="java.lang.String"/>
+	<field name="estado" class="java.lang.String"/>
+	<field name="codigoPostal" class="java.lang.String"/>
+	<field name="rfc" class="java.lang.String"/>
+	<field name="pais" class="java.lang.String"/>
+	<group name="idFactura">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<image>
+				<reportElement x="4" y="16" width="80" height="26"/>
+				<imageExpression><![CDATA[$P{logoFerrari}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="352">
+			<rectangle>
+				<reportElement stretchType="RelativeToBandHeight" x="2" y="270" width="552" height="66"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="361" y="22" width="190" height="225"/>
+			</rectangle>
+			<textField>
+				<reportElement x="361" y="65" width="187" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{serie}+" - "+$F{folio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="95" width="187" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{anoAprobacion}+" - "+$F{noAprobacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="41" width="190" height="14"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="150" width="190" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{formaDePago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="174" width="190" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{tipoDeComprobante}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="123" width="190" height="21"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{noCertificado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="11" width="336" height="20"/>
+				<textElement markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emisorRfc}+" "+$P{emisorNombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="23" width="336" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{emisorCalle}+" "+$P{emisorNumero}+" "+$P{emisorColonia}+" "+$P{emisorCP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="34" width="336" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{emisorCiudad}+" "+$P{emisorEstado}+" "+$P{emisorPais}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="78" width="335" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{expedidoCalle}+" "+$P{expedidoNumero}+" "+$P{expedidoColonia}+" "+$P{expedidoCP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="89" width="335" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{expedidoCiudad}+" "+$P{expedidoEstado}+" "+$P{expedidoPais}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="56" width="342" height="13" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXPEDIDA EN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="110" width="343" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACTURADO A:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="4" y="130" width="335" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="169" width="335" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{poblacion}+" "+$F{codigoPostal}+" "+$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="143" width="100" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{rfc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="157" width="336" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{calle}+" "+$F{numeroExterior}+" "+$F{numeroInterior}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="53" width="190" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERIE - FOLIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="80" width="190" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[AÑO Y NÚMERO DE APROBACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="107" width="190" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NÚMERO DE CERTIFICADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="136" width="190" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MÉTODO DE PAGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="27" width="190" height="16" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FECHA DE EMISIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="162" width="190" height="13" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO DE COMPROBANTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="187" width="190" height="13" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FOLIO INTERNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="214" width="190" height="13" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[RÉGIMEN FISCAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="360" y="227" width="188" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{regimen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="199" width="97" height="15"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{folioInterno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="393" y="7" width="127" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA DE CRÉDITO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="252" width="548" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[  CÓDIGO  CANTIDAD    DESCRIPCIÓN                                                 UNIDAD     PRECIO UNITARIO      IMPORTE]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="4" y="270" width="548" height="60"/>
+				<subreportParameter name="nofactura">
+					<subreportParameterExpression><![CDATA[$F{idFactura}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="factura">
+					<subreportParameterExpression><![CDATA[$F{idFactura}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "partidasNC.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="185" width="343" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[BANCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="214" width="343" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NÚMERO DE CUENTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="4" y="200" width="335" height="14"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{banco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="5" y="229" width="335" height="18"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$P{transferencia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="32" y="14" width="500" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facturaMensaje1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="34" width="204" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{facturaMensaje2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="217" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="19" width="434" height="65"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="5" y="158" width="547" height="28"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="5" y="129" width="546" height="17"/>
+			</rectangle>
+			<textField>
+				<reportElement x="451" y="98" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="131" width="540" height="13"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{totalLetra}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="145" width="548" height="13" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SELLO DIGITAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="449" y="15" width="100" height="20"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{subtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="449" y="28" width="100" height="15" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCUENTO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="451" y="84" width="100" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="450" y="57" width="100" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[IVA 16%]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="452" y="43" width="100" height="14"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{descuento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="71" width="96" height="13"/>
+				<textElement textAlignment="Center" markup="none"/>
+				<textFieldExpression><![CDATA[$F{tasa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="158" width="543" height="30"/>
+				<textElement textAlignment="Justified" markup="none"/>
+				<textFieldExpression><![CDATA[$F{sello}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="117" width="548" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CANTIDAD CON LETRA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="3" y="0" width="548" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                            CADENA ORIGINAL                                                                                   SUBTOTAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="3" y="20" width="435" height="61"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cadenaCompleta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="6" y="188" width="100" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FACTURA DEV:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="6" y="203" width="100" height="14" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[MOTIVO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="202" width="427" height="15"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{motivo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

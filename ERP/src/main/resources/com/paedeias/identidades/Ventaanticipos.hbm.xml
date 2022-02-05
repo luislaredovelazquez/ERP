@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Ventaanticipos" table="ventaanticipos" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="codigo" type="java.lang.Long">
+            <column name="codigo" />
+        </property>
+        <property name="facturada" type="java.lang.Integer">
+            <column name="facturada" />
+        </property>
+        <property name="codVendedor" type="java.lang.Long">
+            <column name="codVendedor" />
+        </property>
+        <property name="codCliente" type="java.lang.Long">
+            <column name="codCliente" />
+        </property>
+        <property name="importe" type="java.lang.Double">
+            <column name="importe" precision="22" scale="0" />
+        </property>
+        <property name="conDesc" type="string">
+            <column name="conDesc" length="45" />
+        </property>
+        <property name="iva" type="java.lang.Double">
+            <column name="iva" precision="22" scale="0" />
+        </property>
+        <property name="subtotal" type="java.lang.Double">
+            <column name="subtotal" precision="22" scale="0" />
+        </property>
+        <property name="devolucion" type="string">
+            <column name="devolucion" length="45" />
+        </property>
+        <property name="venta" type="java.lang.Long">
+            <column name="venta" />
+        </property>
+        <property name="fecha" type="timestamp">
+            <column name="fecha" length="19" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="total" precision="22" scale="0" />
+        </property>
+        <property name="remision" type="java.lang.Double">
+            <column name="remision" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,8 @@
+CREATE TABLE `configuracion` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `campo` text,
+  `contrasena` longblob,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `configuracion` VALUES (1,'wsUsuario','LAVL8707071G0_92'),(2,'wsPassword','859399365762907214437821');

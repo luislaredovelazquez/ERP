@@ -1,0 +1,10 @@
+ene 07, 2014 5:06:20 PM com.paedeias.controladores.CPrincipal$Handler uncaughtException
+Información: java.lang.NullPointerException
+	at com.paedeias.helpers.Conexion.cerrar(Conexion.java:175)
+	at com.paedeias.helpers.hBlog.consultaBlog(hBlog.java:135)
+	at com.paedeias.vistas.FHome.inicializar(FHome.java:386)
+	at com.paedeias.vistas.FHome.<init>(FHome.java:48)
+	at com.paedeias.vistas.VPrincipal.<init>(VPrincipal.java:186)
+	at com.paedeias.controladores.CPrincipal.<init>(CPrincipal.java:187)
+	at com.paedeias.controladores.CPrincipal.main(CPrincipal.java:204)
+

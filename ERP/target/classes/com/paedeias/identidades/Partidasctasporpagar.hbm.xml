@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-may-2012 11:23:12 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.paedeias.identidades.Partidasctasporpagar" table="partidasctasporpagar" catalog="llv">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cuentaPorPagar" type="java.lang.Long">
+            <column name="cuentaPorPagar" />
+        </property>
+        <property name="compra" type="java.lang.Long">
+            <column name="compra" />
+        </property>
+        <property name="importe" type="java.lang.Double">
+            <column name="importe" precision="22" scale="0" />
+        </property>
+        <property name="fecha" type="timestamp">
+            <column name="fecha" length="19" />
+        </property>
+        <property name="tipoPago" type="string">
+            <column name="tipoPago" length="3" />
+        </property>
+        <property name="cheque" type="string">
+            <column name="cheque" length="25" />
+        </property>
+        <property name="banco" type="string">
+            <column name="banco" length="45" />
+        </property>
+        <property name="observaciones" type="string">
+            <column name="observaciones" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

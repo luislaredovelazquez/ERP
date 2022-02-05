@@ -1,0 +1,9 @@
+feb 19, 2014 7:04:00 PM com.paedeias.controladores.CPrincipal$Handler uncaughtException
+Información: java.lang.NullPointerException
+	at javax.swing.ImageIcon.<init>(ImageIcon.java:205)
+	at com.paedeias.vistas.PCompras.<init>(PCompras.java:32)
+	at com.paedeias.vistas.VCompras.<init>(VCompras.java:25)
+	at com.paedeias.vistas.VPrincipal.<init>(VPrincipal.java:184)
+	at com.paedeias.controladores.CPrincipal.<init>(CPrincipal.java:204)
+	at com.paedeias.controladores.CPrincipal.main(CPrincipal.java:221)
+

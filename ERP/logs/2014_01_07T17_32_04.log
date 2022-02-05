@@ -1,0 +1,8 @@
+ene 07, 2014 5:32:04 PM com.paedeias.controladores.CPrincipal$Handler uncaughtException
+Información: java.lang.NullPointerException
+	at com.paedeias.vistas.FHome.inicializar(FHome.java:388)
+	at com.paedeias.vistas.FHome.<init>(FHome.java:48)
+	at com.paedeias.vistas.VPrincipal.<init>(VPrincipal.java:186)
+	at com.paedeias.controladores.CPrincipal.<init>(CPrincipal.java:187)
+	at com.paedeias.controladores.CPrincipal.main(CPrincipal.java:204)
+

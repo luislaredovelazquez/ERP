@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Factura" table="factura">
+    <id name="idFactura" type="java.lang.Integer">
+      <column name="idFactura"/>
+      <generator class="identity"/>
+    </id>
+    <version name="version" type="string">
+      <column length="4" name="version"/>
+    </version>
+    <property name="serie" type="string">
+      <column length="10" name="serie"/>
+    </property>
+    <property name="folio" type="string">
+      <column length="10" name="folio"/>
+    </property>
+    <property name="fecha" type="string">
+      <column length="20" name="fecha"/>
+    </property>
+    <property name="noAprobacion" type="string">
+      <column length="30" name="noAprobacion"/>
+    </property>
+    <property name="anoAprobacion" type="string">
+      <column length="4" name="anoAprobacion"/>
+    </property>
+    <property name="formaDePago" type="string">
+      <column length="10" name="formaDePago"/>
+    </property>
+    <property name="subtotal" type="string">
+      <column length="10" name="subtotal"/>
+    </property>
+    <property name="descuento" type="string">
+      <column length="10" name="descuento"/>
+    </property>
+    <property name="total" type="string">
+      <column length="10" name="total"/>
+    </property>
+    <property name="totalLetra" type="string">
+      <column length="150" name="totalLetra"/>
+    </property>
+    <property name="tipoDeComprobante" type="string">
+      <column length="10" name="tipoDeComprobante"/>
+    </property>
+    <property name="noCertificado" type="string">
+      <column length="30" name="noCertificado"/>
+    </property>
+    <property name="certificado" type="string">
+      <column length="100" name="certificado"/>
+    </property>
+    <property name="sello" type="string">
+      <column length="65535" name="sello"/>
+    </property>
+    <property name="idEmisorF" type="java.lang.Integer">
+      <column name="idEmisorF"/>
+    </property>
+    <property name="idReceptorF" type="java.lang.Integer">
+      <column name="idReceptorF"/>
+    </property>
+    <property name="idConceptoFactura" type="java.lang.Integer">
+      <column name="idConceptoFactura"/>
+    </property>
+    <property name="impuesto" type="string">
+      <column length="3" name="impuesto"/>
+    </property>
+    <property name="tasa" type="string">
+      <column length="3" name="tasa"/>
+    </property>
+    <property name="importeImp" type="string">
+      <column length="6" name="importeImp"/>
+    </property>
+    <property name="folioInterno" type="string">
+      <column length="20" name="folioInterno"/>
+    </property>
+    <property name="idAddenda" type="string">
+      <column length="6" name="idAddenda"/>
+    </property>
+  </class>
+</hibernate-mapping>

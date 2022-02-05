@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="llv"/>
+  <table-filter match-name="emisor"/>
+  <table-filter match-name="usuarios"/>
+  <table-filter match-name="proveedores"/>
+  <table-filter match-name="concepto"/>
+  <table-filter match-name="articulos"/>
+  <table-filter match-name="receptor"/>
+  <table-filter match-name="kardex"/>
+  <table-filter match-name="linea"/>
+  <table-filter match-name="factura"/>
+  <table-filter match-name="departamento"/>
+  <table-filter match-name="clientes"/>
+  <table-filter match-name="articulolinea"/>
+  <table-filter match-name="ubicacion"/>
+  <table-filter match-name="articuloproveedor"/>
+   <table-filter match-name="articuloubicacion"/>
+   <table-filter match-name="ventas"/>
+   <table-filter match-name="partidas"/>
+   <table-filter match-name="anticipos"/>
+   <table-filter match-name="partidasanticipos"/>
+   <table-filter match-name="ventaanticipos"/>
+   <table-filter match-name="partidasventasanticipos"/>
+   <table-filter match-name="reservaciones"/>
+   <table-filter match-name="partidasreservaciones"/>
+   <table-filter match-name="ventareservacion"/>
+   <table-filter match-name="partidasventareservacion"/>
+   <table-filter match-name="compras"/>
+   <table-filter match-name="partidascompras"/>
+   <table-filter match-name="cuentasporcobrar"/>
+   <table-filter match-name="partidasctasporcobrar"/>
+   <table-filter match-name="cuentasporpagar"/>
+   <table-filter match-name="partidasctasporpagar"/>
+   <table-filter match-name="pedidos"/>
+   <table-filter match-name="pedidosventas"/>
+   
+</hibernate-reverse-engineering>

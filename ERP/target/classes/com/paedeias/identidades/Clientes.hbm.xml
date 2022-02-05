@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12/03/2012 03:40:53 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="llv" name="com.paedeias.identidades.Clientes" table="clientes">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="codigo" type="string">
+      <column length="45" name="codigo" not-null="true"/>
+    </property>
+    <property name="sucursal" type="string">
+      <column length="45" name="sucursal" not-null="true"/>
+    </property>
+    <property name="nombre" type="string">
+      <column length="150" name="nombre" not-null="true"/>
+    </property>
+    <property name="clasificacion" type="string">
+      <column length="45" name="clasificacion" not-null="true"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="45" name="telefono" not-null="true"/>
+    </property>
+    <property name="atencion" type="string">
+      <column length="120" name="atencion" not-null="true"/>
+    </property>
+    <property name="calle" type="string">
+      <column length="100" name="calle" not-null="true"/>
+    </property>
+    <property name="numeroExterior" type="int">
+      <column name="numeroExterior" not-null="true"/>
+    </property>
+    <property name="numeroInterior" type="int">
+      <column name="numeroInterior" not-null="true"/>
+    </property>
+    <property name="colonia" type="string">
+      <column length="50" name="colonia" not-null="true"/>
+    </property>
+    <property name="poblacion" type="string">
+      <column length="50" name="poblacion" not-null="true"/>
+    </property>
+    <property name="estado" type="string">
+      <column length="50" name="estado" not-null="true"/>
+    </property>
+    <property name="codigoPostal" type="int">
+      <column name="codigoPostal" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="150" name="email" not-null="true"/>
+    </property>
+    <property name="utilidad" type="int">
+      <column name="utilidad" not-null="true"/>
+    </property>
+    <property name="descuentoMaximo" type="int">
+      <column name="descuentoMaximo" not-null="true"/>
+    </property>
+    <property name="desc1" type="int">
+      <column name="desc1" not-null="true"/>
+    </property>
+    <property name="desc2" type="int">
+      <column name="desc2" not-null="true"/>
+    </property>
+    <property name="desc3" type="int">
+      <column name="desc3" not-null="true"/>
+    </property>
+    <property name="desc4" type="int">
+      <column name="desc4" not-null="true"/>
+    </property>
+    <property name="descVol" type="int">
+      <column name="descVol" not-null="true"/>
+    </property>
+    <property name="descGlobal" type="int">
+      <column name="descGlobal" not-null="true"/>
+    </property>
+    <property name="bloqueo" type="int">
+      <column name="bloqueo" not-null="true"/>
+    </property>
+    <property name="ofertas" type="int">
+      <column name="ofertas" not-null="true"/>
+    </property>
+    <property name="diasCredito" type="int">
+      <column name="diasCredito" not-null="true"/>
+    </property>
+    <property name="limiteDiasCredito" type="int">
+      <column name="limiteDiasCredito" not-null="true"/>
+    </property>
+    <property name="credito" type="int">
+      <column name="credito" not-null="true"/>
+    </property>
+    <property name="observaciones" type="string">
+      <column length="200" name="observaciones" not-null="true"/>
+    </property>
+    <property name="frecuencia" type="int">
+      <column name="frecuencia" not-null="true"/>
+    </property>
+    <property name="fechaNacimiento" type="string">
+      <column length="45" name="fechaNacimiento" not-null="true"/>
+    </property>
+    <property name="saldo" type="int">
+      <column name="saldo" not-null="true"/>
+    </property>
+    <property name="pais" type="string">
+      <column length="45" name="pais" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
